@@ -34,8 +34,10 @@ export default class MyProvider extends Component {
                 body: JSON.stringify({title, body, userId: 1})
             }
             const result = await (await fetch('https://jsonplaceholder.typicode.com/posts', options)).json()
-            console.log('result', result)
-            this.setState({postMsg: 'Post added'})
+            //console.log('result', result)
+            let posts = this.state.posts
+            let copy = [result, ...posts]
+            this.setState({postMsg: 'Post added', posts: copy})
             setTimeout(()=>this.setState({postMsg: ''}),4000)
         }catch(e){
             this.setState({postMsg: 'Network error... Try again'})
