@@ -5,6 +5,7 @@ import p3 from '../../Images/p3.png'
 import p4 from '../../Images/p4.png'
 import p5 from '../../Images/p5.png'
 import p6 from '../../Images/p6.png'
+import Title from './Title'
 
 export default function Services() {
     const serJson = [
@@ -32,7 +33,7 @@ export default function Services() {
   return (
     <div className="font-helvetica" style={{ backgroundColor: 'orange' }}>
         <div className="padding-all-20"></div>
-        <div className="font-50 center-text bold-text font-circular">Products and Services</div>
+        <Title title="Product & Services" />
         <div className="center-text">We can handle any problem on both foreign and domestic vehicles.</div><br />
         <div className="padding-all-10"></div>
 

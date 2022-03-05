@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom'
 import a1 from '../../Images/a1.png'
 import a2 from '../../Images/a2.png'
 import a3 from '../../Images/a3.png'
+import Title from './Title'
 
 export default function AboutUs() {
     const json = [
@@ -23,7 +24,7 @@ export default function AboutUs() {
   return (
     <div>
         <div className="padding-all-10 width-55 width-lx-80 width-l-100 width-m-100 width-s-100 margin-auto">
-            <div className="center-text font-50 font-circular bold-text">About Us</div>
+            <Title title="About us" />
 
             <div>
                 <div className="padding-all-10"></div>

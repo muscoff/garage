@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import Title from './Title'
 
 export default function Contact() {
   const [email, setEmail] = useState('')
@@ -20,7 +21,7 @@ export default function Contact() {
   }
   return (
     <div id="contact" className="white-text">
-        <div className="font-circular center-text font-50 bold-text">Contact Us</div>
+        <Title title="Contact us" />
 
         <div className="width-40 width-lx-50 width-l-70 width-m-80 width-s-90 margin-auto">
             <div className="center-text margin-auto">
