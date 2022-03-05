@@ -8,8 +8,10 @@ const bgStyle = {
     backgroundAttachment: 'fixed'
 }
 
-export default function BackgroundPartion() {
+export default function BackgroundPartion({className, children}) {
   return (
-    <div className="width-100 height-30" style={{ background: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${bg})`, ...bgStyle }}></div>
+    <div className={className? className: "width-100 height-30"} style={{ background: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${bg})`, ...bgStyle }}>
+      {children}
+    </div>
   )
 }
