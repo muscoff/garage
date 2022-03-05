@@ -154,6 +154,21 @@ form.contact button{
     cursor: pointer;
 }
 
+.user{
+    width: calc(120px * var(--n1));
+    height: calc(120px * var(--n1));
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.title{
+    color:rgb(11, 64, 99);
+}
+
+.margin-bottom-10{
+    margin-bottom: calc(10px * var(--n1));
+}
+
 .show-on-media{
     display: none;
 }

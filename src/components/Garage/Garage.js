@@ -4,6 +4,7 @@ import BackgroundPartion from './BackgroundPartion'
 import Contact from './Contact'
 import GarageHead from './GarageHead'
 import Services from './Services'
+import Team from './Team'
 
 export default function Garage() {
   return (
@@ -14,6 +15,7 @@ export default function Garage() {
         </div>
         <Services />
         <BackgroundPartion />
+        <Team />
         <div className="black-bg">
             <div className="padding-all-20"></div>
             <Contact />
